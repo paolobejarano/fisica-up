@@ -1,22 +1,22 @@
-// Declarar la variable led como integer y poner el valor en donde está conectado el pin
-int led=13;
+// Declarar la variable led como integer y asignar valor
+int led = 13;
 
-void setup(){
-  Serial.begin(9600);
-  pinMode(led,OUTPUT);
+void setup()
+{
+  pinMode(led, OUTPUT);
 }
 
-void loop(){
-
-  // enciende
-  digitalWrite(led,HIGH);
+void loop()
+{
+  // Prender led
+  digitalWrite(led, HIGH);
   
-  //espera 1 segundo
+  // Esperar 1 segundo
   delay(1000);
   
-  // apaga
-  digitalWrite(led,LOW);
+  // Apagar led
+  digitalWrite(led, LOW);
   
-  //espera 1 segundo
+  // Esperar 1 segundo
   delay(1000);
 }
